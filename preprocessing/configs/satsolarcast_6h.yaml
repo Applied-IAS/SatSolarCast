@@ -1,0 +1,30 @@
+dataset:
+  load_from_disk: False
+  dataset_path: "solarcube_image_"
+  dataset_source: "solarcube"
+  train_tile_list: [1, 2, 3, 4, 6, 8, 10, 12, 13, 14, 15, 16, 17, 19]
+  test_tile_list: [5, 7, 9, 18]
+  train_year_list: ["2018"]
+  test_year_list: ["2018"]
+  x_img_types: ["vis047", "vis086", "ir133", "sza", "insitu"]
+  y_img_types: ["vis047", "vis086", "ir133", "sza", "insitu"]
+  input_len: 24
+  output_len: 24
+  sample_interval: 16
+  downscale_s: False
+  downscale_t: False
+  output_type: np.float32
+  normalize_x: True
+  normalize_y: True
+  normalize_max: False
+  batch_size: 15
+  point_based: False
+  ignorenan: False
+  layout: "THWC"
+  start_date: None
+  end_date: None
+  datetime_filter: None
+  catalog_filter: None
+  unwrap_time: False
+optim:
+  seed: 0
