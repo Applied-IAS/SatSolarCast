@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.pth
+*.pt
+*.h5
+*.hdf
+*.npz
+*.npy
+*.zip
+/outputs/

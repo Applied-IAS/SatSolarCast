@@ -1,0 +1,62 @@
+{
+  "name": "crossvivit_3h",
+  "model": "crossvivit",
+  "horizon_hours": 3,
+  "input_len": 12,
+  "output_len": 12,
+  "checkpoint": "checkpoints/crossvivit_3h.pth",
+  "sha256": "96b945afe4760103ce97bb543496dccc920f35c6ddb8d9ff1df05868fd93f044",
+  "size_bytes": 580046101,
+  "model_kwargs": {
+    "image_size": [
+      120,
+      120
+    ],
+    "patch_size": [
+      8,
+      8
+    ],
+    "dim": 384,
+    "depth": 16,
+    "heads": 12,
+    "mlp_ratio": 4,
+    "ctx_channels": 4,
+    "ts_channels": 1,
+    "out_dim": 1,
+    "dim_head": 64,
+    "dropout": 0.0,
+    "freq_type": "lucidrains",
+    "pe_type": "rope",
+    "num_mlp_heads": 1,
+    "use_glu": true,
+    "ctx_masking_ratio": 0.99,
+    "ts_masking_ratio": 0.0,
+    "decoder_dim": 128,
+    "decoder_depth": 4,
+    "decoder_heads": 6,
+    "decoder_dim_head": 128,
+    "ts_length": 12
+  },
+  "data": {
+    "layout": "NTHWC",
+    "channel_order": [
+      "vis047",
+      "vis086",
+      "ir133",
+      "sza",
+      "insitu"
+    ],
+    "image_size": [
+      120,
+      120
+    ],
+    "time_resolution_minutes": 15,
+    "test_station_ids": [
+      5,
+      7,
+      9,
+      18
+    ],
+    "irradiance_inverse_normalization": "prediction * 279.49 + 193.44"
+  }
+}

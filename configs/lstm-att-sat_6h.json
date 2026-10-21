@@ -1,0 +1,47 @@
+{
+  "name": "lstm-att-sat_6h",
+  "model": "lstm-att-sat",
+  "horizon_hours": 6,
+  "input_len": 24,
+  "output_len": 24,
+  "checkpoint": "checkpoints/lstm-att-sat_6h.pth",
+  "sha256": "af61eed836613b0ed5e57fa0bca7e46b1e8849ba3e56e9fb76d13d8687f92a90",
+  "size_bytes": 40391330,
+  "model_kwargs": {
+    "img_channel": 4,
+    "img_size": 120,
+    "vector_hidden_size": 4,
+    "vector_output_size": 4,
+    "input_dim": 1,
+    "multi_input_dim": 4,
+    "hidden_dim": 128,
+    "output_dim": 1,
+    "num_layers": 4,
+    "if_multi_variable": false,
+    "use_satellite_memory": 1,
+    "seq_len": 24,
+    "out_len": 24
+  },
+  "data": {
+    "layout": "NTHWC",
+    "channel_order": [
+      "vis047",
+      "vis086",
+      "ir133",
+      "sza",
+      "insitu"
+    ],
+    "image_size": [
+      120,
+      120
+    ],
+    "time_resolution_minutes": 15,
+    "test_station_ids": [
+      5,
+      7,
+      9,
+      18
+    ],
+    "irradiance_inverse_normalization": "prediction * 279.49 + 193.44"
+  }
+}

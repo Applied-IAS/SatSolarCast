@@ -1,0 +1,5 @@
+# Versions used to validate the four released state dictionaries on CPU.
+torch==2.8.0
+numpy==1.26.4
+h5py==3.12.1
+einops==0.8.1

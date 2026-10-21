@@ -1,0 +1,46 @@
+{
+  "download_url": null,
+  "download_status": "Google Drive upload pending",
+  "checkpoints": [
+    {
+      "name": "crossvivit_3h",
+      "model": "crossvivit",
+      "horizon_hours": 3,
+      "input_len": 12,
+      "output_len": 12,
+      "checkpoint": "checkpoints/crossvivit_3h.pth",
+      "sha256": "96b945afe4760103ce97bb543496dccc920f35c6ddb8d9ff1df05868fd93f044",
+      "size_bytes": 580046101
+    },
+    {
+      "name": "crossvivit_6h",
+      "model": "crossvivit",
+      "horizon_hours": 6,
+      "input_len": 24,
+      "output_len": 24,
+      "checkpoint": "checkpoints/crossvivit_6h.pth",
+      "sha256": "94f5c6511d39cd53e5736a6cb94ff8d2a8e27d05f3fac4b9d6a9151d11542159",
+      "size_bytes": 580070677
+    },
+    {
+      "name": "lstm-att-sat_3h",
+      "model": "lstm-att-sat",
+      "horizon_hours": 3,
+      "input_len": 12,
+      "output_len": 12,
+      "checkpoint": "checkpoints/lstm-att-sat_3h.pth",
+      "sha256": "90e1fb6727c25580444da93d32622cfdeaca46da24fed0864c1e7e3ecad2196a",
+      "size_bytes": 40391733
+    },
+    {
+      "name": "lstm-att-sat_6h",
+      "model": "lstm-att-sat",
+      "horizon_hours": 6,
+      "input_len": 24,
+      "output_len": 24,
+      "checkpoint": "checkpoints/lstm-att-sat_6h.pth",
+      "sha256": "af61eed836613b0ed5e57fa0bca7e46b1e8849ba3e56e9fb76d13d8687f92a90",
+      "size_bytes": 40391330
+    }
+  ]
+}
