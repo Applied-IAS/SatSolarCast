@@ -1,6 +1,6 @@
 {
-  "download_url": null,
-  "download_status": "Google Drive upload pending",
+  "download_url": "https://drive.google.com/file/d/16qhIBP2iJ8B8p3rZpedATWTTsO4dxQv5/view?usp=sharing",
+  "download_status": "available",
   "checkpoints": [
     {
       "name": "crossvivit_3h",

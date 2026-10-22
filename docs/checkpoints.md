@@ -8,10 +8,10 @@ the `False1` experiment suffix denotes `multi_channel_input=False` and
 
 ## Download
 
-**Google Drive upload is pending.** The download URL will be added here and to
-[`checkpoints/manifest.json`](../checkpoints/manifest.json) after upload. No
-checkpoint files are stored in Git. The archive name is
-`SatSolarCast-checkpoints.zip`, approximately 1.24 GB.
+**Download:** [SatSolarCast-checkpoints.zip on Google Drive](https://drive.google.com/file/d/16qhIBP2iJ8B8p3rZpedATWTTsO4dxQv5/view?usp=sharing)
+(approximately 1.24 GB). Checkpoint details and SHA-256 checksums are listed in
+[`checkpoints/manifest.json`](../checkpoints/manifest.json). Checkpoint files are
+hosted on Google Drive and are not stored in Git.
 
 Extract the archive into the repository root:
 

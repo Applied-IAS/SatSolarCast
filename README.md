@@ -12,7 +12,7 @@ Checkpoint configurations and an inference-only entry point are provided for:
 | CrossViViT baseline | [Configuration](configs/crossvivit_3h.json) | [Configuration](configs/crossvivit_6h.json) |
 | LSTM-att+Sat | [Configuration](configs/lstm-att-sat_3h.json) | [Configuration](configs/lstm-att-sat_6h.json) |
 
-**The Google Drive weight upload is pending.** See the
+**Download pretrained weights:** [Google Drive](https://drive.google.com/file/d/16qhIBP2iJ8B8p3rZpedATWTTsO4dxQv5/view?usp=sharing). See the
 [checkpoint download and inference guide](docs/checkpoints.md) for archive
 layout, SHA-256 checksums, model settings, and evaluation protocols. Weights are
 hosted separately from this Git repository.
