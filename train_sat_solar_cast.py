@@ -277,17 +277,19 @@ def train_model(args, model, train_loader, val_loader, criterion1, criterion2, o
             point_seq_label = y_batch[:,:,4:5,0,0]
 
             if args.use_satellite_memory:
-                point_seq_pred = model(x_batch, y_batch, multi_input_seq, phase=1)  
-                model.satellite_memory.memory_w.requires_grad = True 
+                # Enable bank gradients before constructing the context-phase graph.
+                model.satellite_memory.memory_w.requires_grad = True
+                point_seq_pred = model(x_batch, y_batch, multi_input_seq, phase=1)
                 loss = criterion2(point_seq_pred, point_seq_label)
-                optimizer.zero_grad()
+                optimizer.zero_grad(set_to_none=True)
                 loss.backward()
                 optimizer.step()
 
-                point_seq_pred = model(x_batch, y_batch, multi_input_seq, phase=2)  
-                model.satellite_memory.memory_w.requires_grad = False 
+                model.satellite_memory.memory_w.requires_grad = False
+                point_seq_pred = model(x_batch, y_batch, multi_input_seq, phase=2)
                 loss = criterion2(point_seq_pred, point_seq_label)
-                optimizer.zero_grad()
+                # None gradients also prevent Adam momentum updates to the frozen bank.
+                optimizer.zero_grad(set_to_none=True)
                 loss.backward()
                 optimizer.step()
             else:
